@@ -1,0 +1,65 @@
+@import url('https://fonts.cdnfonts.com/css/ds-marker-felt');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#logoText {
+  font-family: 'DS Marker Felt', sans-serif;
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: #0d131c;
+}
+
+.hamburger-react {
+  position: absolute !important;
+  left: 10px;
+  top: 10px;
+  z-index: 2000;
+}
+
+@media only screen and (max-width: 580px) {
+  .hamburger-react {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hamburger-react {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.wallet-adapter-dropdown button.wallet-adapter-button {
+  background-color: #0B1315 !important;
+;
+}
+
+table {
+  border-spacing: 30px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
